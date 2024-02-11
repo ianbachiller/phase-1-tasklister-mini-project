@@ -18,11 +18,8 @@ function newP(toDoEnteredStoredHere){
   document.querySelector('#tasks').appendChild(newUl) 
 }
 function deleteToDoAndAddToCompletedList(e){
-  let taskItem = e.target.parentNode
+  taskItem = e.target.parentNode
   taskItem.remove();
-
-  let newUlForCompletedToDo = document.createElement('ul')
-  // newUlForCompletedToDo.textContent = `${toDoEnteredStoredHere}: ✔️`
-
   document.querySelector('#tasks_completed').appendChild(taskItem)
 }
+
